@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="=wdith=device-with,initial-scale=1.0">
+  <title>Library Management</title>
+  <style>
+    .{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color:#001219;
+  text-align: center;
+  font-size: larger;
+
+}
+li,a,button{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.lem;
+  text-decoration: none;
+  color: beige;
+}
+header{
+  background-image: linear-gradient(#001219, #001e2a);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 8%;
+
+}
+#logo{
+  width: 120px;
+  height: 90px;
+}
+.nav-links{
+  transition: all 0.2s ease 0s;
+}
+.nav-links li{
+  display: inline-block;
+  padding: 0px 60px;
+}
+.nav-links li a{
+  transition: all 0.2s ease 0s;
+}
+.nav-links li a:hover{
+  color:#005f73;
+}
+button{
+  padding: 20px 30px;
+  background-color:transparent;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+}
+ .snbt:hover{
+  background-color: #005f73;
+ } 
+ /*
+ @media screen and (max-width:730px) {
+  button{
+    display: none;
+  }
+  .nav-links li{
+    padding: 0px 10px;
+  }
+
+ }
+ @media screen and (max-width:730px){
+  .nav-links {
+    display: none;
+  }
+  header{
+    display: block;
+    text-align: right;
+  }*/
+  
+ .bg{
+  background-image: url(./ll.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+ }
+ 
+h1{
+  color:white;
+}
+.content h1{
+  font-size: 65px;
+  font-weight: 600;
+}
+.searchbar{
+  width: 100%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 20px;
+  height: 50px;
+
+}
+.searchbar input{
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 24px 20px;
+  font-size: 20px;
+  color:black;
+
+}
+#srlogo{
+
+  width: 40px;
+  height: 30px;
+  border-style: unset;
+  background: transparent;
+  border-radius: 60px;
+}
+.bgsr{
+  padding-left: 20%;
+}
+.snbt{
+  padding: 5px 10px;
+  background-color:lightseagreen;
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.tbl{
+  color:white;
+  position: relative;
+  top: 150px;
+  right: 150px;
+  text-transform: uppercase;
+  font-size: 25px;
+  font: bold;
+}
+.allbooks{
+  background-color:lightseagreen;
+  border-radius: 60px;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 15%;
+  text-transform: uppercase;
+  float: right;
+  position: relative;
+  right: 280px;
+  top: 30px;
+
+}
+.allbooks:hover{
+ background-color: #5d459e; 
+}
+p{
+  color: white;
+}
+.ftl{
+ display: inline-flex ;
+ color:beige;
+ align-content: baseline;
+}
+::placeholder{
+  color: #cac7ff;
+}
+.ftrbtn{
+  padding: 10px 20px;
+  background-color:lightseagreen;
+  cursor: pointer;
+  transition: all 0.2s ease 0s; 
+  position: absolute;
+  bottom: 90px;
+  border-radius: 10px;
+}
+
+.ftrbtn:hover{
+  background-color: #5d459e;
+}
+  </style>
+  
+
+</head>
+<body>
+
+  <h1>MSAJCE Library</h1>
+  <header>
+    
+    <a href="#"><img id="logo" src="C:\Users\User\Downloads\lib.png" alt="lib logo"></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="librarymanagement.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact-us.html"> Service</a></li>
+      </ul>
+    </nav>
+    <button class="snbt" id="show-btn">LOGIN!</button>
+  </header>
+  <section class="bg">
+    <div class="content">
+      <h1>Online Library</h1>
+    </div>
+    <div class="bgsr">
+      <form action="" class="searchbar">
+        <input type="text" placeholder="Enter Book Name.>>> " name="q">
+        <span>
+        <button class="srbtn"><img id="srlogo" src="C:\Users\User\Downloads\ds.png"></button>
+      </span>
+      </form>
+      <div class="tbl">
+        <table>
+          <tr>
+            <td>Total no.of books :</td>
+            <td>1,500</td>
+          </tr>
+          <tr>
+            <td>Local author books :</td>
+            <td>750</td>
+          </tr>
+          <tr>
+            <td>Forign authour books :</td>
+            <td>500</td>
+          </tr>
+          <tr>
+            <td>Magazines&others :</td>
+            <td>250</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="allbooks">
+     <a href="loadmre.html" class="allb">
+      <button>Show all books</button>
+     </a>
+    </div>
+  <a href="showallbooks.html">
+    <button class="ftrbtn" id="show-btn">Filter</button>
+  </a>
+
+  </section>
+  <footer class="sticky-footer">
+    <p>@Copyrights prarthanabalar 2023.</p>
+  </footer>
+  <script src="lar.js"></script>
+</body>
+</html>
